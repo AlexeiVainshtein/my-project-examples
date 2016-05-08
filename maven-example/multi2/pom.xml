@@ -12,7 +12,7 @@
     </properties>
 <scm>
     <connection>scm:svn:http://127.0.0.1/svn/my-project/test</connection>
-    <developerConnection>scm:svn:https://127.0.0.1/svn/my-project</developerConnection>
+    <developerConnection>scm:svn:https://127.0.0.1/svn/my-project/test</developerConnection>
     <tag>HEAD</tag>
     <url>http://127.0.0.1/websvn/my-project/test</url>
   </scm>
