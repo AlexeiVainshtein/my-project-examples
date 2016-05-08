@@ -3,9 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
 <parent>
     <groupId>org.jfrog.test</groupId>
-    <artifactId>multi1</artifactId>
+    <artifactId>multi</artifactId>
     <version>3.748</version>
-    <type>pom</type>
 </parent>
     <groupId>org.jfrog.test</groupId>
     <artifactId>multi</artifactId>
