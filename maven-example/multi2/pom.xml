@@ -10,7 +10,12 @@
     <properties>
         <daversion>${project.parent.version}</daversion>
     </properties>
-
+<scm>
+    <connection>scm:svn:http://127.0.0.1/svn/my-project/test</connection>
+    <developerConnection>scm:svn:https://127.0.0.1/svn/my-project</developerConnection>
+    <tag>HEAD</tag>
+    <url>http://127.0.0.1/websvn/my-project/test</url>
+  </scm>
     <artifactId>multi2</artifactId>
     <version>3.747-SNAPSHOT</version>
     <packaging>jar</packaging>
