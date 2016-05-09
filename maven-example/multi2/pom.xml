@@ -4,20 +4,20 @@
     <parent>
         <groupId>org.jfrog.test1</groupId>
         <artifactId>multi</artifactId>
-        <version>3.748-SNAPSHOT</version>
+        <version>3.74865433232</version>
     </parent>
 
     <properties>
         <daversion>${project.parent.version}</daversion>
     </properties>
 <scm>
-    <connection>scm:svn:http://127.0.0.1/svn/my-project/3.748-SNAPSHOT</connection>
-    <developerConnection>scm:svn:https://127.0.0.1/svn/my-project/3.748-SNAPSHOT</developerConnection>
+    <connection>scm:svn:http://127.0.0.1/websvn/my-project/3.748-SNAPSHOT</connection>
+    <developerConnection>scm:svn:http://127.0.0.1/websvn/my-project/3.748-SNAPSHOT</developerConnection>
     <tag>HEAD</tag>
     <url>http://127.0.0.1/websvn/my-project/3.748-SNAPSHOT</url>
   </scm>
     <artifactId>multi2</artifactId>
-    <version>3.748-SNAPSHOT</version>
+    <version>3.74865433232</version>
     <packaging>jar</packaging>
     <name>Multi 2</name>
 
