@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.jfrog.test1</groupId>
         <artifactId>multi</artifactId>
-        <version>3.748-SNAPSHOT</version>
+        <version>3.7484</version>
     </parent>
 
     <properties>
@@ -17,7 +17,7 @@
     <url>http://127.0.0.1/websvn/my-project/test</url>
   </scm>
     <artifactId>multi2</artifactId>
-    <version>3.748-SNAPSHOT</version>
+    <version>3.7484</version>
     <packaging>jar</packaging>
     <name>Multi 2</name>
 
