@@ -12,11 +12,7 @@
     <packaging>pom</packaging>
     <name>Simple Multi Modules Build</name>
 
-    <modules>
-        <module>multi1</module>
-        <module>multi2</module>
-        <module>multi3</module>
-    </modules>
+   
 
 <scm>
     <connection>scm:svn:http://127.0.0.1/svn/my-project</connection>
@@ -79,4 +75,21 @@
             </plugin>
         </plugins>
     </build>
+    
+    <profiles>
+        
+        		<profile>
+			<id>RPM</id>
+			<activation>
+				<os>
+					<family>unix</family>
+				</os>
+			</activation>
+			 <modules>
+                     <module>multi1</module>
+                    <module>multi2</module>
+                   <module>multi3</module>
+             </modules>
+		</profile>
+    </profiles>
 </project>
