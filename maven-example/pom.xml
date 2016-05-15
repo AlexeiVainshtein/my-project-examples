@@ -4,7 +4,7 @@
 
     <groupId>org.jfrog.test1</groupId>
     <artifactId>multi</artifactId>
-    <version>3.749-SNAPSHOT</version>
+    <version>3.7492</version>
     <packaging>pom</packaging>
     <name>Simple Multi Modules Build</name>
 
