@@ -94,7 +94,7 @@ repositories {
 // Our project dependencies
 dependencies {
     compile 'joda-time:joda-time:2.3'
-        system 'junit:junit:4.12'
+        debugCompile 'junit:junit:4.12'
 
     // Backward compatibility for andoird <http://developer.android.com/tools/support-library/index.html>  
     //compile 'com.android.support:support-v4:19.1.+'
