@@ -93,7 +93,7 @@ repositories {
 
 // Our project dependencies
 dependencies {
-    provided 'joda-time:joda-time:2.3'
+    androidTestCompile 'joda-time:joda-time:2.3'
     
     // Backward compatibility for andoird <http://developer.android.com/tools/support-library/index.html>  
     // compile 'com.android.support:support-v4:19.1.+'
