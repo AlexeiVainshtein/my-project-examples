@@ -1,0 +1,22 @@
+node{
+    stage 'Clone'
+        git url: 'https://github.com/JFrogDev/project-examples.git'
+    stage 'Defoine New Arti'
+        def server = Artifactory.server('-555800408@1461342837804')
+    stage 'Gradle config'
+        def gradleInstallation = Artifactory.newGradleBuild()
+        gradleInstallation.tool = 'G2'
+        gradleInstallation.deployer repo:'ForTest', server: server
+        gradleInstallation.resolver repo:'jcenter-virtual', server: server
+        withEnv(['DONT_COLLECT ME*=DID_YOU_COLLECT_ME?']){
+            stage 'BI'
+                def buildInfo = Artifactory.newBuildInfo()
+                buildInfo.env.capture = true
+                
+            stage 'exc gradle'
+                gradleInstallation.run rootDir: "gradle-examples/4/gradle-example-ci-server/", buildFile: 'build.gradle', tasks: 'clean install', buildInfo:buildInfo
+                
+                server.publishBuildInfo buildInfo
+        }
+        
+}
