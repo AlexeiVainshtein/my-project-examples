@@ -1,7 +1,7 @@
 pluginRepositories {
-   maven {
-      url 'http://localhost:9090/artifactory/gradle-maven'
-    }
-  //  gradlePluginPortal()
+  // maven {
+   //   url 'http://localhost:9090/artifactory/gradle-maven'
+   // }
+    gradlePluginPortal()
 }
 include "shared", "api", "services:webservice"
