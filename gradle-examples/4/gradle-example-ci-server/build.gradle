@@ -20,6 +20,10 @@ buildscript {
   }
 }
 
+ptintln "This is the java version: " + JavaVersion.current()
+def currentJvm = org.gradle.internal.jvm.Jvm.current()
+println currentJvm
+
 allprojects {
   apply plugin: 'java'
   apply plugin: 'maven'
