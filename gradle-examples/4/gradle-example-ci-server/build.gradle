@@ -23,8 +23,8 @@ def currentJvm = org.gradle.internal.jvm.Jvm.current()
 println currentJvm
 
 allprojects {
-  apply plugin: 'java'
-  apply plugin: 'maven'
+  //apply plugin: 'java'
+  //apply plugin: 'maven'
 
   group = 'org.jfrog.example.gradle'
   version = '1.0'
