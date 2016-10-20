@@ -13,18 +13,36 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-plugins {
-   id 'com.gradle.build-scan' version '1.1.2'
-   id 'com.jfrog.artifactory' version '4.4.7'
- }
+ 
+ buildscript {
+  repositories {
+    //jcenter()
+    
+        maven {
+      url 'http://localhost:9090/artifactory/gradle-remote'
+    }
+  }
+    dependencies {
+    classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.1-rc3'
+    classpath 'com.gradle:build-scan-plugin:1.1.1'
+//    classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:4.4.7'
+
+  }
+
+}
+
+//plugins {
+//   id 'com.gradle.build-scan' version '1.1.2'
+//   id 'com.jfrog.artifactory' version '4.4.7'
+// }
 
 println "This is the java version: " + JavaVersion.current()
 def currentJvm = org.gradle.internal.jvm.Jvm.current()
 println currentJvm
 
 allprojects {
-  //apply plugin: 'java'
-  //apply plugin: 'maven'
+  apply plugin: 'java'
+  apply plugin: 'maven'
 
   group = 'org.jfrog.example.gradle'
   version = '1.0'
