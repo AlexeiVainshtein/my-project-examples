@@ -19,7 +19,7 @@ buildscript {
     //jcenter()
     
         maven {
-      url 'http://localhost:9090/artifactory/gradle-remote’ 
+      url 'http://localhost:9090/artifactory/gradle-remote'
     }
   }
     dependencies {
