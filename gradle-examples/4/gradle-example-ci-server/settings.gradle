@@ -1,6 +1,7 @@
 pluginRepositories {
-   maven {
-      url 'http://localhost:9090/artifactory/gradle-remote'
-    }
+  // maven {
+  //    url 'http://localhost:9090/artifactory/gradle-remote'
+   // }
+    gradlePluginPortal()
 }
 include "shared", "api", "services:webservice"
