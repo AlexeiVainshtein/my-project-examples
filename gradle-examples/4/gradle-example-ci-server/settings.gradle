@@ -1,4 +1,4 @@
 pluginRepositories {
     gradlePluginPortal()
 }
-include "shared", "api", "services:webservice"
+//include "shared", "api", "services:webservice"
