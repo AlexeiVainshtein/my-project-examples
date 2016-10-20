@@ -16,8 +16,19 @@
 
 buildscript {
   repositories {
-    jcenter()
+    //jcenter()
+    
+        maven {
+      url 'http://localhost:9090/artifactory/gradle-remote’ 
+    }
   }
+    dependencies {
+    classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.1-rc3'
+    classpath 'com.gradle:build-scan-plugin:1.1.1'
+//    classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:4.4.7'
+
+  }
+
 }
 
 println "This is the java version: " + JavaVersion.current()
