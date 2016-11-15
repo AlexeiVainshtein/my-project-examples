@@ -5,6 +5,7 @@
         <groupId>org.jfrog.test</groupId>
         <artifactId>multi</artifactId>
         <version>7.7.10-SNAPSHOT</version>
+        <relativePath>../pom-test.xml</relativePath>
     </parent>
 
     <artifactId>multi1</artifactId>
