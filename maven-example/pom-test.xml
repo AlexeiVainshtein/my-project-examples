@@ -9,7 +9,7 @@
 
         <modules>
         <module>multi1</module>
-        <module>multi2/pom.xml</module>
+        <module>multi2/pom-test</module>
         <module>multi3</module>
     
     </modules>
