@@ -89,6 +89,9 @@ project('api') {
         publications(publishing.publications.ivyJava)
         properties {
             simpleFile '**:**:**:*@*', simpleFile: 'only on settings file'
+                    all '*:*:*:*@*', aaaatag: System.getenv()["JOB_NAME"] + "_b" + System.getenv()["BUILD_NUMBER"]
+        all '*:*:*:*@*', aaaaserver: System.getenv()["JENKINS_URL"]
+
         }
     }
 }
