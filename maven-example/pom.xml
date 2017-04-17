@@ -3,10 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.jfrog.test</groupId>
     <artifactId>multi</artifactId>
-    <version>4.4.8-SNAPSHOT</version>
+    <version>4.4.7-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Simple Multi Modules Build</name>
 
+        <modules>
+        <module>multi1</module>
+        <module>multi2/pom-test.xml</module>
+        <module>multi3</module>
+    
+    </modules>
 <scm>
     <connection>scm:svn:http://127.0.0.1/svn/my-project</connection>
     <developerConnection>scm:svn:https://127.0.0.1/svn/my-project</developerConnection>
