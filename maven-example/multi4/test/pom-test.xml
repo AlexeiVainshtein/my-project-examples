@@ -5,6 +5,7 @@
         <groupId>org.jfrog.test</groupId>
         <artifactId>multi</artifactId>
         <version>4.4.9-SNAPSHOT</version>
+    <relativePath>../../</relativePath>
 
     </parent>
 
