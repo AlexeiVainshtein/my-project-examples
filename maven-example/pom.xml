@@ -9,9 +9,7 @@
 
         <modules>
         <module>multi1</module>
-        <module>multi2/pom-test.xml</module>
         <module>multi3</module>
-                    <module>multi4/test/pom-test.xml</module>
 
     </modules>
 <scm>
